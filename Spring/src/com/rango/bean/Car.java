@@ -1,5 +1,8 @@
 package com.rango.bean;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
 /**
  * @author:龙浪(lang.long@ucarinc.com)
  * @date:2018/7/23 20:53$
@@ -7,7 +10,9 @@ package com.rango.bean;
  * @params:
  * @return:
  */
+@Component("car")
 public class Car {
+    @Value("红色")
     private String color;
     private String name;
 
